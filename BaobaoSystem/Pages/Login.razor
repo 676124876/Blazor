@@ -1,0 +1,33 @@
+﻿@page "/login"
+@attribute [TabItemOption(Text = "登录", Closable = false)]
+
+@if (AlertStatus)
+{
+    <Alert Color="Color.Danger" ShowDismiss="true" OnDismiss="@DismissClick" ShowShadow="true">账号密码错误</Alert>
+}
+
+<Card IsCenter="true" IsShadow="true">
+    <HeaderTemplate>
+        小宝蛋奖励系统
+        <Light IsFlash="true" TooltipText="系统正常运行中"></Light>
+    </HeaderTemplate>
+    <BodyTemplate>
+        <ValidateForm Model="@Model" OnValidSubmit="@OnValidSubmit" OnInvalidSubmit="@OnInvalidSubmit">
+            <FloatingLabel DisplayText="账号" TValue="string" IsSelectAllTextOnFocus="true" Color="Color.Primary" style="width: 100%;" @bind-Value="@Model.Account" />
+            <Divider Text="奖励系统" />
+            @if (Spinneryesornot)
+            {
+                <div class="col-6 col-sm-4 col-md-3 col-lg-auto"><Spinner SpinnerType="SpinnerType.Grow" Color="Color.Primary"></Spinner></div>
+            }
+            <FloatingLabel DisplayText="密码" TValue="string" IsSelectAllTextOnFocus="true" Color="Color.Primary" style="width: 100%;" @bind-Value="@Model.Password" />
+            <div class="d-flex justify-content-center" style="margin-top:5%">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
+                    <PulseButton Icon="fa-solid fa-fw fa-heart fa-beat" Color="Color.Primary" ButtonType="ButtonType.Submit" IsAsync="true"></PulseButton>
+                </div>
+            </div>
+        </ValidateForm>
+    </BodyTemplate>
+    <FooterTemplate>
+        一切解释权归小香猪王子所有
+    </FooterTemplate>
+</Card>
