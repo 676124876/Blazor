@@ -4653,19 +4653,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\贾上\\.nuget\\packages\\": {}
+    "C:\\Users\\dkx4zbb\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\贾上\\source\\repos\\BaobaoSystem\\BaobaoSystem\\BaobaoSystem.csproj",
+      "projectUniqueName": "C:\\Workspace\\Github\\Blazor\\BaobaoSystem\\BaobaoSystem.csproj",
       "projectName": "BaobaoSystem",
-      "projectPath": "C:\\Users\\贾上\\source\\repos\\BaobaoSystem\\BaobaoSystem\\BaobaoSystem.csproj",
-      "packagesPath": "C:\\Users\\贾上\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\贾上\\source\\repos\\BaobaoSystem\\BaobaoSystem\\obj\\",
+      "projectPath": "C:\\Workspace\\Github\\Blazor\\BaobaoSystem\\BaobaoSystem.csproj",
+      "packagesPath": "C:\\Users\\dkx4zbb\\.nuget\\packages\\",
+      "outputPath": "C:\\Workspace\\Github\\Blazor\\BaobaoSystem\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\贾上\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dkx4zbb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4673,6 +4678,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Workspace\\Github\\Self\\ComponentBuilder\\pack": {},
+        "C:\\Workspace\\Project\\Accipiens\\RPA\\RpaRemoter\\RpaRemoter": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4727,7 +4736,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -2,11 +2,11 @@
 <CascadingAuthenticationState>
     <Router AppAssembly="@typeof(App).Assembly">
         <Found Context="routeData">
-            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
-                <NotAuthorized>
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
+              @*  <NotAuthorized>
                     @JSRuntime.InvokeVoidAsync("eval", "var currentUrl = window.location.href; var loginUrl = currentUrl + 'login'; window.location.href = loginUrl;");
-                </NotAuthorized>
-            </AuthorizeRouteView>
+                </NotAuthorized>*@
+            </RouteView>
             <FocusOnNavigate RouteData="@routeData" Selector="h1" />
         </Found>
         <NotFound>
